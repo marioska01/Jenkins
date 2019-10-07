@@ -15,3 +15,5 @@ RUN apt-get update && apt-get install default-jdk git -y
 #RUN apt-get update && apt-get install maven -y
 
 COPY apache-maven-3.6.1-bin.tar.gz /root/apache-maven-3.6.1-bin.tar.gz
+
+RUN git config --global http.sslVerify false
